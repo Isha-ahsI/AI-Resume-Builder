@@ -1,7 +1,6 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { FiMenu,FiArrowUpRight } from "react-icons/fi";
-import { IoMdClose } from "react-icons/io";
+import { FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
 // import LogoMark from "./LogoMark";
 import  ThemeToggle  from "../components/ui/ThemeToggle";
 import { NAV } from "../data/testIds";
@@ -70,7 +69,7 @@ export const Navbar = () => {
                 data-testid={NAV.mobileMenuBtn}
                 aria-label="Menu"
               >
-                {open ? <IoMdClose className="h-4 w-4" /> : <FiMenu className="h-4 w-4" />}
+                {open ? <FiX className="h-4 w-4" /> : <FiMenu className="h-4 w-4" />}
               </button>
             </div>
           </div>
