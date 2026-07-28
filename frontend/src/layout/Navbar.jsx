@@ -1,6 +1,6 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
 // import LogoMark from "./LogoMark";
 import  ThemeToggle  from "../components/ui/ThemeToggle";
 import { NAV } from "../data/testIds";
@@ -43,7 +43,7 @@ export const Navbar = () => {
                   onClick={() => nav("/dashboard")}
                   className="hidden sm:inline-flex items-center gap-1.5 h-9 px-4 rounded-full bg-foreground text-background text-sm font-semibold hover:opacity-90 transition-opacity"
                 >
-                  Dashboard <ArrowUpRight className="h-4 w-4" />
+                  Dashboard <FiArrowUpRight className="h-4 w-4" />
                 </button>
               ) : (
                 <>
@@ -69,7 +69,7 @@ export const Navbar = () => {
                 data-testid={NAV.mobileMenuBtn}
                 aria-label="Menu"
               >
-                {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+                {open ? <FiX className="h-4 w-4" /> : <FiMenu className="h-4 w-4" />}
               </button>
             </div>
           </div>
