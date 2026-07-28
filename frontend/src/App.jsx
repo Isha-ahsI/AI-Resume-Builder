@@ -1,13 +1,10 @@
 import React from 'react'
-// import { RoutesPath } from './router/RoutesPath'
-import { Layout } from './layout/Layout'
+import { RoutesPath } from './routes/RoutesPath'
 
 export const App = () => {
-    return (
-        <>
-          <Layout>
-            {/* <RoutesPath /> */}
-          </Layout>
-        </>
-    )
+  return (
+    <>
+      <RoutesPath />
+    </>
+  )
 }
