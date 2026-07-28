@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { AnimatedShapeGrid } from "./AnimatedShapeGrid";
 
-export const AuthLayout = ({ title, subtitle, children, footer }    ) => {
+export const AuthLayout = ({ title, subtitle, children, footer }) => {
     return (
         <>
             <div className="min-h-screen grid lg:grid-cols-2 bg-background text-foreground">
