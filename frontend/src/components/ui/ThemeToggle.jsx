@@ -1,5 +1,5 @@
 import React from "react";
-import { Moon, Sun } from "lucide-react";
+import { FiSun, FiMoon } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext";
 import { NAV } from "../../data/testIds";
 import { cn } from "../../lib/utils";
@@ -17,14 +17,14 @@ export default function ThemeToggle({ className = "" }) {
         className
       )}
     >
-      <Sun
+      <FiSun
         className={`h-4 w-4 absolute transition-all ${
           theme === "dark"
             ? "scale-0 rotate-90 opacity-0"
             : "scale-100 rotate-0 opacity-100"
         }`}
       />
-      <Moon
+      <FiMoon
         className={`h-4 w-4 absolute transition-all ${
           theme === "dark"
             ? "scale-100 rotate-0 opacity-100"
