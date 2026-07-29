@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { AnimatedShapeGrid } from './ui/AnimatedShapeGrid'
 import { RotatingWords } from './ui/RotatingWords'
-import { ResumePreview } from './ui/ResumePreview'
+import { ResumePreview } from './resume/ResumePreview'
 import { defaultResumeData } from '../data/mockData'
 import { LANDING } from "../data/testIds";
 import { fadeUp, stagger } from "../lib/animations";
