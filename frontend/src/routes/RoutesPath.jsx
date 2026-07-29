@@ -8,6 +8,7 @@ import { ResetPassword } from '../pages/ResetPassword';
 import { ForgotPassword } from '../pages/ForgotPassword';
 import { Login } from '../pages/Login';
 import { Register } from '../pages/Register';
+import { Dashboard } from '../pages/Dashboard';
 
 export const RoutesPath = () => {
   return (
@@ -15,6 +16,7 @@ export const RoutesPath = () => {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/templates" element={<Templates />} />
           </Route>
           <Route path="*" element={<NotFound />} />
