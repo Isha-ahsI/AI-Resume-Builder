@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { templates,defaultResumeData } from '../data/mockData'
-import { ResumePreview } from './ui/ResumePreview'
+import { ResumePreview } from './resume/ResumePreview'
 
 
 export const TemplatesSection = () => {
