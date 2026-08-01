@@ -10,6 +10,7 @@ import { Login } from '../pages/Login';
 import { Register } from '../pages/Register';
 import { Dashboard } from '../pages/Dashboard';
 import { Profile } from '../pages/Profile';
+import { SetupWizard } from '../pages/SetupWizard';
 
 export const RoutesPath = () => {
   return (
@@ -19,6 +20,7 @@ export const RoutesPath = () => {
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/templates" element={<Templates />} />
+            <Route path="/setup-wizard" element={<SetupWizard />} />
           </Route>
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
