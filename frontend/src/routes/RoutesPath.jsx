@@ -9,6 +9,7 @@ import { ForgotPassword } from '../pages/ForgotPassword';
 import { Login } from '../pages/Login';
 import { Register } from '../pages/Register';
 import { Dashboard } from '../pages/Dashboard';
+import { SetupWizard } from '../pages/SetupWizard';
 
 export const RoutesPath = () => {
   return (
@@ -18,6 +19,7 @@ export const RoutesPath = () => {
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/templates" element={<Templates />} />
+            <Route path="/setup-wizars" element={<SetupWizard />} />
           </Route>
           <Route path="*" element={<NotFound />} />
           <Route path="/reset-password" element={<ResetPassword />} />
